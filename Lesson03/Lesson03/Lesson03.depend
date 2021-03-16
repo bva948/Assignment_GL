@@ -1,0 +1,82 @@
+# depslib dependency file v1.0
+1615824920 source:e:\game making\new folder\lesson03\lesson03\lesson03.rc
+	"resource.h"
+	"winres.h"
+
+1615824920 e:\game making\new folder\lesson03\lesson03\resource.h
+
+1615826391 source:e:\game making\new folder\lesson03\lesson03\baseobject.cpp
+	<iostream>
+	"BaseObject.h"
+
+1615826612 e:\game making\new folder\lesson03\lesson03\baseobject.h
+	<string>
+
+1615826464 source:e:\game making\new folder\lesson03\lesson03\car.cpp
+	"Car.h"
+	<iostream>
+
+1615825636 e:\game making\new folder\lesson03\lesson03\car.h
+	"DynamicObject.h"
+
+1615826128 e:\game making\new folder\lesson03\lesson03\dynamicobject.h
+	"BaseObject.h"
+
+1615826434 source:e:\game making\new folder\lesson03\lesson03\dynamicobject.cpp
+	"DynamicObject.h"
+	<iostream>
+
+1615826456 source:e:\game making\new folder\lesson03\lesson03\house.cpp
+	"House.h"
+	<iostream>
+
+1615874546 e:\game making\new folder\lesson03\lesson03\house.h
+	"StaticObject.h"
+
+1615826161 e:\game making\new folder\lesson03\lesson03\staticobject.h
+	"BaseObject.h"
+
+1615827653 source:e:\game making\new folder\lesson03\lesson03\motorbike.cpp
+	"Motorbike.h"
+	<iostream>
+
+1615826330 e:\game making\new folder\lesson03\lesson03\motorbike.h
+	"DynamicObject.h"
+
+1615826422 source:e:\game making\new folder\lesson03\lesson03\staticobject.cpp
+	"StaticObject.h"
+	<iostream>
+
+1615826532 source:e:\game making\new folder\lesson03\lesson03\tree.cpp
+	"Tree.h"
+	<iostream>
+
+1615825655 e:\game making\new folder\lesson03\lesson03\tree.h
+	"StaticObject.h"
+
+1615875294 source:e:\game making\new folder\lesson03\lesson03\main.cpp
+	"Main.h"
+	"Car.h"
+	"House.h"
+	"Tree.h"
+	"Motorbike.h"
+	<list>
+
+1615824940 e:\game making\new folder\lesson03\lesson03\main.h
+
+1615826464 e:\game making\new folder\lesson03\lesson03\car.cpp
+	"Car.h"
+	<iostream>
+
+1615826456 e:\game making\new folder\lesson03\lesson03\house.cpp
+	"House.h"
+	<iostream>
+
+1615826532 e:\game making\new folder\lesson03\lesson03\tree.cpp
+	"Tree.h"
+	<iostream>
+
+1615827653 e:\game making\new folder\lesson03\lesson03\motorbike.cpp
+	"Motorbike.h"
+	<iostream>
+

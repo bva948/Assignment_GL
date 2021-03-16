@@ -1,12 +1,4 @@
-﻿  Main.cpp
-  Motorbike.cpp
+﻿  House.cpp
+  Main.cpp
   Generating Code...
-Main.obj : error LNK2005: "public: __thiscall Car::Car(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Car@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) already defined in Car.obj
-Main.obj : error LNK2005: "private: __thiscall House::House(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0House@@AAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) already defined in House.obj
-Main.obj : error LNK2005: "public: virtual __thiscall Car::~Car(void)" (??1Car@@UAE@XZ) already defined in Car.obj
-Main.obj : error LNK2005: "private: virtual __thiscall House::~House(void)" (??1House@@EAE@XZ) already defined in House.obj
-Motorbike.obj : error LNK2005: "public: __thiscall Motorbike::Motorbike(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Motorbike@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) already defined in Main.obj
-Motorbike.obj : error LNK2005: "public: virtual __thiscall Motorbike::~Motorbike(void)" (??1Motorbike@@UAE@XZ) already defined in Main.obj
-Tree.obj : error LNK2005: "public: __thiscall Tree::Tree(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (??0Tree@@QAE@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@00@Z) already defined in Main.obj
-Tree.obj : error LNK2005: "public: virtual __thiscall Tree::~Tree(void)" (??1Tree@@UAE@XZ) already defined in Main.obj
-E:\Game making\New folder\Lesson03\Debug\Lesson03.exe : fatal error LNK1169: one or more multiply defined symbols found
+  Lesson03.vcxproj -> E:\Game making\New folder\Lesson03\Debug\Lesson03.exe
