@@ -17,11 +17,6 @@ AnimationSprite::AnimationSprite(GLfloat numFrames, GLfloat frameTime, std::shar
 	m_frameTime = frameTime;
 }
 
-void AnimationSprite::Init() 
-{
-	Sprite2D::Init();
-};
-
 void AnimationSprite::Update(GLfloat deltatime)
 {
 	m_currentTime += deltatime;
@@ -81,29 +76,19 @@ void AnimationSprite::Draw()
 	}
 
 	iTempShaderVaribleGLID = -1;
-	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_numFrames");
+	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_matMVP");
 	if (iTempShaderVaribleGLID != -1)
-		glUniform1f(iTempShaderVaribleGLID, 1.0);
+		glUniformMatrix4fv(iTempShaderVaribleGLID, 1, GL_FALSE, matrixWVP.m[0]);
 
 	iTempShaderVaribleGLID = -1;
 	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_currentFrame");
 	if (iTempShaderVaribleGLID != -1)
-		glUniform1f(iTempShaderVaribleGLID, 1.0);
+		glUniform1f(iTempShaderVaribleGLID, m_currentFrame);
 
 	iTempShaderVaribleGLID = -1;
-	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_currentTime");
+	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_numFrames");
 	if (iTempShaderVaribleGLID != -1)
-		glUniform1f(iTempShaderVaribleGLID, 1.0);
-
-	iTempShaderVaribleGLID = -1;
-	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_frameTime");
-	if (iTempShaderVaribleGLID != -1)
-		glUniform1f(iTempShaderVaribleGLID, 1.0);
-
-	iTempShaderVaribleGLID = -1;
-	iTempShaderVaribleGLID = m_pShader->GetUniformLocation((char*)"u_matMVP");
-	if (iTempShaderVaribleGLID != -1)
-		glUniformMatrix4fv(iTempShaderVaribleGLID, 1, GL_FALSE, matrixWVP.m[0]);
+		glUniform1f(iTempShaderVaribleGLID, m_numFrames);
 
 
 
@@ -112,4 +97,5 @@ void AnimationSprite::Draw()
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 	glBindTexture(GL_TEXTURE_2D, 0);
+
 }

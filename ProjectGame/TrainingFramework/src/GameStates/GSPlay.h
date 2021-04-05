@@ -2,6 +2,7 @@
 #include "gamestatebase.h"
 #include "GameButton.h"
 #include "AnimationSprite.h"
+#include "Game.h"
 
 class Sprite2D;
 class Sprite3D;
@@ -34,7 +35,9 @@ private:
 
 	std::shared_ptr<Sprite2D> m_BackGround;
 	std::list<std::shared_ptr<GameButton>>	m_listButton;
-	std::shared_ptr<Text>  m_score;
-	std::shared_ptr<AnimationSprite> m_coin;
+	//std::shared_ptr<Text>  m_score;
+	//std::shared_ptr<AnimationSprite> m_coin;
+	//std::list<std::shared_ptr<Sprite2D>> m_listBackCard;
+	std::shared_ptr<Game> m_playGame;
 };
 

@@ -17,6 +17,8 @@ ResourceManagers::ResourceManagers()
 	m_ModelsPath = dataPath + "Model\\";
 	m_FontPath = dataPath + "fonts\\";
 	m_SoundsPath = dataPath + "Sounds\\";
+	//m_Soloud = SoLoud::Soloud();
+	//m_Soloud.init();
 	m_Soloud = std::make_shared<SoLoud::Soloud>();
 	m_Soloud->init();
 }
@@ -122,7 +124,6 @@ void ResourceManagers::PlaySound(const std::string& name, bool loop)
 	if (it != m_MapWave.end())
 	{
 		wave = it->second;
-		//std::cout << "ko tim thay" << std::endl;
 	}
 	else
 	{

@@ -43,7 +43,8 @@ private:
 	std::map<std::string, std::shared_ptr<Models>> m_MapModels;
 	std::map<std::string, std::shared_ptr<Font>> m_MapFont;
 	std::map<std::string, std::shared_ptr<SoLoud::Wav>> m_MapWave;
-	std::shared_ptr<SoLoud::Soloud> m_Soloud;
+	//SoLoud::Soloud m_Soloud;
+	std::shared_ptr<SoLoud::Soloud >m_Soloud;
 
 	std::string m_ShaderPath;
 	std::string m_TexturePath;

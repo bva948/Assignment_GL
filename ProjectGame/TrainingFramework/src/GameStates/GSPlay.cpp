@@ -26,7 +26,7 @@ GSPlay::~GSPlay()
 void GSPlay::Init()
 {
 	auto model = ResourceManagers::GetInstance()->GetModel("Sprite2D");
-	auto texture = ResourceManagers::GetInstance()->GetTexture("bg_play");
+	auto texture = ResourceManagers::GetInstance()->GetTexture("background_play");
 
 	//BackGround
 	auto shader = ResourceManagers::GetInstance()->GetShader("TextureShader");
@@ -35,27 +35,31 @@ void GSPlay::Init()
 	m_BackGround->SetSize(screenWidth, screenHeight);
 
 	//back button
-	texture = ResourceManagers::GetInstance()->GetTexture("button_back");
+	texture = ResourceManagers::GetInstance()->GetTexture("back_icon");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
-	button->Set2DPosition(80, 50);
-	button->SetSize(100, 25);
+	button->Set2DPosition(50, 50);
+	button->SetSize(50, 50);
 	button->SetOnClick([]() {
 		GameStateMachine::GetInstance()->PopState();
 		});
 	m_listButton.push_back(button);
 
-	//text game title
-	shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
-	m_score = std::make_shared< Text>(shader, font, "$10,000", TEXT_COLOR::RED, 1.0);
-	m_score->Set2DPosition(Vector2(660, 50));
+	//new game
+	m_playGame = std::make_shared<Game>();
+	m_playGame->Init();
+
+	//text
+	//shader = ResourceManagers::GetInstance()->GetShader("TextShader");
+	//std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
+	//m_score = std::make_shared< Text>(shader, font, "$10,000", TEXT_COLOR::RED, 1.0);
+	//m_score->Set2DPosition(Vector2(660, 50));
 
 	//coin
-	texture = ResourceManagers::GetInstance()->GetTexture("coin3");
-	shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
-	m_coin = std::make_shared<AnimationSprite>(7, 0.1, model, shader, texture);
-	m_coin->Set2DPosition(screenWidth / 2, screenHeight / 2);
-	m_coin->SetSize(130, 130);
+	//texture = ResourceManagers::GetInstance()->GetTexture("coin4");
+	//shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
+	//m_coin = std::make_shared<AnimationSprite>(10, 0.1f, model, shader, texture);
+	//m_coin->Set2DPosition(100, 100);
+	//m_coin->SetSize(52, 52);
 
 	//ResourceManagers::GetInstance()->PlaySound("background_music1", true);
 }
@@ -103,7 +107,8 @@ void GSPlay::Update(float deltaTime)
 	{
 		it->Update(deltaTime);
 	}
-	m_coin->Update(deltaTime);
+	m_playGame->Update(deltaTime);
+	//m_coin->Update(deltaTime);
 }
 
 void GSPlay::Draw()
@@ -113,8 +118,13 @@ void GSPlay::Draw()
 	{
 		it->Draw();
 	}
-	m_score->Draw();
-	m_coin->Draw();
+	m_playGame->Draw();
+	//for (auto it : m_listBackCard)
+	//{
+	//	it->Draw();
+	//}
+	//m_score->Draw();
+	//m_coin->Draw();
 }
 
 void GSPlay::SetNewPostionForBullet()

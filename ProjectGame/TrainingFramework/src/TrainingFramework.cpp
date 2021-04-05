@@ -3,8 +3,8 @@
 #include "Application.h"
 #include "utilities.h" 
 
-GLint screenWidth = 800;
-GLint screenHeight = 480;
+GLint screenWidth = 1024;
+GLint screenHeight = 600;
 
 
 GLint Init(ESContext* esContext)
@@ -42,8 +42,6 @@ void CleanUp()
 
 GLint _tmain(GLint argc, _TCHAR* argv[])
 {
-	glEnable(GL_BLEND);
-	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
 	ESContext esContext;
 	esInitContext(&esContext);
