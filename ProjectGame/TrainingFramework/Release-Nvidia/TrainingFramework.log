@@ -1,0 +1,146 @@
+﻿  BasePlayer.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Card.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Card.cpp(67,58): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Card.cpp(67,40): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  Dealer.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(31,66): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(31,42): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(38,77): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(38,53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(41,73): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(41,49): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(45,73): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(45,49): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(50,80): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(50,56): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(87,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(89,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2194): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(_Ty &,std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Dealer.cpp(37): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+  Game.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(45,65): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(45,45): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(51,67): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(51,47): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(58,67): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(58,47): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(62,68): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(62,48): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(66,68): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(66,48): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(220,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2194): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(_Ty &,std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Game.cpp(57): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+  Player.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(23,66): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(23,42): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(30,77): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(30,53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(33,73): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(33,49): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(37,73): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(37,49): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(42,80): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(42,56): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'float', possible loss of data
+          with
+          [
+              _Ty=double
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2194): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(_Ty &,std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&) noexcept(false)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+          with
+          [
+              _Ty=Text
+          ]
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\Player.cpp(29): message : see reference to function template instantiation 'std::shared_ptr<Text> std::make_shared<Text,std::shared_ptr<Shaders>&,std::shared_ptr<Font>&,const char(&)[8],TEXT_COLOR,double>(std::shared_ptr<Shaders> &,std::shared_ptr<Font> &,const char (&)[8],TEXT_COLOR &&,double &&)' being compiled
+  GameStatebase.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  GSPlay.cpp
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.h(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(34,60): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(34,42): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(58,70): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(58,46): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(63,70): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(63,46): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\xutility(138,73): warning C4244: 'argument': conversion from '_Ty' to 'GLfloat', possible loss of data
+          with
+          [
+              _Ty=int
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2194): message : see reference to function template instantiation 'void std::_Construct_in_place<_Ty,int,float,std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&>(_Ty &,int &&,float &&,std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &) noexcept(false)' being compiled
+          with
+          [
+              _Ty=AnimationSprite
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int,float,std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&>(int &&,float &&,std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &)' being compiled
+          with
+          [
+              _Ty=AnimationSprite
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\memory(2907): message : see reference to function template instantiation 'std::_Ref_count_obj2<_Ty>::_Ref_count_obj2<int,float,std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&>(int &&,float &&,std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &)' being compiled
+          with
+          [
+              _Ty=AnimationSprite
+          ]
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameStates\GSPlay.cpp(57): message : see reference to function template instantiation 'std::shared_ptr<AnimationSprite> std::make_shared<AnimationSprite,int,float,std::shared_ptr<Models>&,std::shared_ptr<Shaders>&,std::shared_ptr<Texture>&>(int &&,float &&,std::shared_ptr<Models> &,std::shared_ptr<Shaders> &,std::shared_ptr<Texture> &)' being compiled
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+E:\Game making\Assignment\ProjectGame\TrainingFramework\src\GameObject\BasePlayer.cpp(119): warning C4715: 'BasePlayer::getCardState': not all control paths return a value
+  78 of 1755 functions ( 4.4%) were compiled, the rest were copied from previous compilation.
+    6 functions were new in current compilation
+    9 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  TrainingFramework.vcxproj -> E:\Game making\Assignment\ProjectGame\BIN-Nvidia\TrainingFramework.exe

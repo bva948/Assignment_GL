@@ -40,28 +40,30 @@ void GSPlay::Init()
 	button->Set2DPosition(50, 50);
 	button->SetSize(50, 50);
 	button->SetOnClick([]() {
+		ResourceManagers::GetInstance()->PauseSound("bgmusic");
 		GameStateMachine::GetInstance()->PopState();
 		});
 	m_listButton.push_back(button);
 
 	//new game
-	m_playGame = std::make_shared<Game>();
+	m_player = std::make_shared<Player>();
+	m_dealer = std::make_shared<Dealer>();
+	m_playGame = std::make_shared<Game>(m_player, m_dealer);
 	m_playGame->Init();
 
-	//text
-	//shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	//std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
-	//m_score = std::make_shared< Text>(shader, font, "$10,000", TEXT_COLOR::RED, 1.0);
-	//m_score->Set2DPosition(Vector2(660, 50));
+	//player coin
+	texture = ResourceManagers::GetInstance()->GetTexture("coin");
+	shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
+	m_playerCoin = std::make_shared<AnimationSprite>(8, 0.1f, model, shader, texture);
+	m_playerCoin->Set2DPosition(screenWidth / 2 - 400, screenHeight / 2 + 195);
+	m_playerCoin->SetSize(30, 30);
 
-	//coin
-	//texture = ResourceManagers::GetInstance()->GetTexture("coin4");
-	//shader = ResourceManagers::GetInstance()->GetShader("AnimationShader");
-	//m_coin = std::make_shared<AnimationSprite>(10, 0.1f, model, shader, texture);
-	//m_coin->Set2DPosition(100, 100);
-	//m_coin->SetSize(52, 52);
+	//dealer coin
+	m_dealerCoin = std::make_shared<AnimationSprite>(8, 0.1f, model, shader, texture);
+	m_dealerCoin->Set2DPosition(screenWidth / 2 - 400, screenHeight / 2 - 222);
+	m_dealerCoin->SetSize(30, 30);
 
-	//ResourceManagers::GetInstance()->PlaySound("background_music1", true);
+	ResourceManagers::GetInstance()->PlaySound("bgmusic", true);
 }
 
 void GSPlay::Exit()
@@ -98,6 +100,7 @@ void GSPlay::HandleTouchEvents(int x, int y, bool bIsPressed)
 		(it)->HandleTouchEvents(x, y, bIsPressed);
 		if ((it)->IsHandle()) break;
 	}
+	m_playGame->HandleTouchEvents(x, y, bIsPressed);
 }
 
 void GSPlay::Update(float deltaTime)
@@ -108,7 +111,8 @@ void GSPlay::Update(float deltaTime)
 		it->Update(deltaTime);
 	}
 	m_playGame->Update(deltaTime);
-	//m_coin->Update(deltaTime);
+	m_playerCoin->Update(deltaTime);
+	m_dealerCoin->Update(deltaTime);
 }
 
 void GSPlay::Draw()
@@ -119,12 +123,8 @@ void GSPlay::Draw()
 		it->Draw();
 	}
 	m_playGame->Draw();
-	//for (auto it : m_listBackCard)
-	//{
-	//	it->Draw();
-	//}
-	//m_score->Draw();
-	//m_coin->Draw();
+	m_playerCoin->Draw();
+	m_dealerCoin->Draw();
 }
 
 void GSPlay::SetNewPostionForBullet()

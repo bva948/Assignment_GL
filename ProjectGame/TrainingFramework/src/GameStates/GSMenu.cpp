@@ -26,18 +26,13 @@ void GSMenu::Init()
 	m_BackGround->Set2DPosition(screenWidth / 2, screenHeight / 2);
 	m_BackGround->SetSize(screenWidth, screenHeight);
 	
-	//Title
-	//texture = ResourceManagers::GetInstance()->GetTexture("title1");
-	//m_title = std::make_shared<Sprite2D>(model, shader, texture);
-	//m_title->Set2DPosition(screenWidth / 2, screenHeight / 2);
-	//m_title->SetSize(600, 400);
-
 	//play button
 	texture = ResourceManagers::GetInstance()->GetTexture("start_button");
 	std::shared_ptr<GameButton> button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth / 2, screenHeight / 2 + 250);
 	button->SetSize(200, 80);
 	button->SetOnClick([]() {
+		ResourceManagers::GetInstance()->PauseSound("bgmusic");
 		GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Play);
 		});
 	m_listButton.push_back(button);
@@ -47,9 +42,9 @@ void GSMenu::Init()
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth - 200, 50);
 	button->SetSize(50, 50);
-	//button->SetOnClick([]() {
-	//	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Intro);
-	//	});
+	button->SetOnClick([]() {
+		exit(0);
+		});
 	m_listButton.push_back(button);
 
 	//exit button
@@ -67,18 +62,12 @@ void GSMenu::Init()
 	button = std::make_shared<GameButton>(model, shader, texture);
 	button->Set2DPosition(screenWidth - 130, 50);
 	button->SetSize(50, 50);
-	//button->SetOnClick([]() {
-	//	GameStateMachine::GetInstance()->ChangeState(StateTypes::STATE_Intro);
-	//	});
+	button->SetOnClick([]() {
+		exit(0);
+		});
 	m_listButton.push_back(button);
 
-
-	//text game title
-	//shader = ResourceManagers::GetInstance()->GetShader("TextShader");
-	//std::shared_ptr<Font> font = ResourceManagers::GetInstance()->GetFont("arialbd");
-	//m_Text_gameName = std::make_shared< Text>(shader, font, "BLACKJACK", TEXT_COLOR::WHILE, 2.0);
-
-	//ResourceManagers::GetInstance()->PlaySound("background_music1");
+	ResourceManagers::GetInstance()->PlaySound("bgmusic", true);
 }
 
 void GSMenu::Exit()
@@ -119,7 +108,6 @@ void GSMenu::HandleTouchEvents(int x, int y, bool bIsPressed)
 void GSMenu::Update(float deltaTime)
 {
 	m_BackGround->Update(deltaTime);
-	//m_title->Update(deltaTime);
 	for (auto it : m_listButton)
 	{
 		it->Update(deltaTime);
@@ -129,7 +117,6 @@ void GSMenu::Update(float deltaTime)
 void GSMenu::Draw()
 {
 	m_BackGround->Draw();
-	//m_title->Draw();
 	for (auto it : m_listButton)
 	{
 		it->Draw();

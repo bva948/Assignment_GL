@@ -134,6 +134,7 @@ class Matrix
 {
 public:
 	//constructors
+	
 	Matrix() {}
 	Matrix(GLfloat val);
 	Matrix(const Matrix & mat);
